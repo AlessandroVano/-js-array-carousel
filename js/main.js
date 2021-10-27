@@ -89,4 +89,15 @@ document.getElementsByClassName('image-container')[imgActive].classList.add('act
 console.log( document.getElementsByClassName('image-container') );
 
 
+// 3. rendo attiva l'immagine nella zona thumbs
+document.getElementsByClassName('thumb')[imgActive].classList.add('active');
+console.log(document.getElementsByClassName('thumb') );
 
+
+// Al click dell'utente sulle frecce l'immagine attiva diventa
+
+const next = document.querySelector('.next');
+
+next.addEventListener('click', function(){
+console.log('clicca per andare avanti');
+});
