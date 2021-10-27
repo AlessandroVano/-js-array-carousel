@@ -102,11 +102,22 @@ next.addEventListener('click', function() {
 
 
 //aggiornamento immagine attiva
-imgActive++;
-console.log(imgActive);
+ imgActive++;
+console.log(imgActive); 
+
+
+
+
 //imposta immagine attiva resettando quella attuale e impostando quella successiva
 /* resettare immagine */
 document.querySelector('.image-container.active').classList.remove('active');
 /* imposta successiva */
 document.getElementsByClassName('image-container')[imgActive].classList.add('active');
 
+
+// impostare la thmbnail
+/* resettare thmb */
+document.querySelector('.thumb.active').classList.remove('active');
+/* imposta successiva */
+document.getElementsByClassName('thumb')[imgActive].classList.add('active');
+});
