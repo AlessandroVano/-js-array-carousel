@@ -65,7 +65,16 @@ for (let i = 0; i <  imageCollection.length; i++) {
          </div>
     </div>`;
 
+// 2. collezioni Thumbnails
+//vale lo stesso procedimento fatto sopra
 
+thumbsContainer.innerHTML += `
+<div class="thumb">
+<img src="${imageCollection[i]}" alt="${titleCollection[1]}">
+</div>`;
+
+
+}
 
 
 
