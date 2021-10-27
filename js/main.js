@@ -42,4 +42,10 @@ const textCollection = [
 
 //referenze
 
+/* prendo come riferimento il contenitore dell'immagine grossa a sinistra */
+const imageContainer = document.querySelector('.images');
+/* prendo come riferimento il contenitore delle immagini piccole a destra*/
+const thumbs = document.querySelector('.thumbs');
+
+
 
