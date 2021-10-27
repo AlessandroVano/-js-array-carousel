@@ -94,7 +94,7 @@ document.getElementsByClassName('thumb')[imgActive].classList.add('active');
 console.log(document.getElementsByClassName('thumb') );
 
 
-// Al click dell'utente sulle frecce l'immagine attiva diventa
+// Al click dell'utente sulla freccia sotto l'immagine si attiva
 
 const next = document.querySelector('.next');
 
@@ -102,10 +102,17 @@ next.addEventListener('click', function() {
 
 
 //aggiornamento immagine attiva
- imgActive++;
-console.log(imgActive); 
+/* imgActive++;
+console.log(imgActive); */
+
+//loop delle immagini (quando arriva all'ultima ritorna alla prima)
 
 
+if(imgActive === imageCollection.length - 1) {
+    imgActive = 0;
+} else {
+    imgActive++;
+}
 
 
 //imposta immagine attiva resettando quella attuale e impostando quella successiva
