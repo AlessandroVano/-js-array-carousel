@@ -105,6 +105,8 @@ next.addEventListener('click', function() {
 imgActive++;
 console.log(imgActive);
 //imposta immagine attiva resettando quella attuale e impostando quella successiva
+/* resettare immagine */
+document.querySelector('.image-container.active').classList.remove('active');
+/* imposta successiva */
+document.getElementsByClassName('image-container')[imgActive].classList.add('active');
 
-// impostare la thmbnail
-});
