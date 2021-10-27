@@ -40,12 +40,35 @@ const textCollection = [
     'Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam,',
 ];
 
-//referenze
+//referenze principali
 
 /* prendo come riferimento il contenitore dell'immagine grossa a sinistra */
 const imageContainer = document.querySelector('.images');
 /* prendo come riferimento il contenitore delle immagini piccole a destra*/
-const thumbs = document.querySelector('.thumbs');
+const thumbsContainer = document.querySelector('.thumbs');
+
+
+
+// creazione contenuto principale
+
+// 1. collezioni immagini / testo / titolo
+
+for (let i = 0; i <  imageCollection.length; i++) {
+    /// creazione loop con tutte le immagini */
+     //  metto interpolazione così facendo scorrerà tutte le immagini, la stessa cosa con i titoli ed il testo
+    imageContainer.innerHTML += `
+    <div class="image-container">
+         <img src="${imageCollection[i]}" alt="${titleCollection[1]}">
+         <div class="text">
+             <h3>${ titleCollection[i]}</h3>
+             <p>${textCollection[i]}</p>
+         </div>
+    </div>`;
+
+
+
+
+
 
 
 
