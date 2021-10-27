@@ -80,10 +80,13 @@ thumbsContainer.innerHTML += `
 
 // 1. riferimento per attivare l'immagine
 let imgActive = 0; 
+console.log(imgActive);
 
+// 2. rendo attiva l'immagine
+/* con la proprietà getElementsByClassName (non va messo il punto perchè è una proprietà già specifica) */
 
-
-
+document.getElementsByClassName('image-container')[imgActive].classList.add('active');
+console.log( document.getElementsByClassName('image-container') );
 
 
 
