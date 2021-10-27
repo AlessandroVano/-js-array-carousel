@@ -98,6 +98,13 @@ console.log(document.getElementsByClassName('thumb') );
 
 const next = document.querySelector('.next');
 
-next.addEventListener('click', function(){
-console.log('clicca per andare avanti');
+next.addEventListener('click', function() {
+
+
+//aggiornamento immagine attiva
+imgActive++;
+console.log(imgActive);
+//imposta immagine attiva resettando quella attuale e impostando quella successiva
+
+// impostare la thmbnail
 });
