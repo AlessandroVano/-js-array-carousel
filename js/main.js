@@ -67,14 +67,20 @@ for (let i = 0; i <  imageCollection.length; i++) {
 
 // 2. collezioni Thumbnails
 //vale lo stesso procedimento fatto sopra
-
 thumbsContainer.innerHTML += `
 <div class="thumb">
 <img src="${imageCollection[i]}" alt="${titleCollection[1]}">
 </div>`;
-
-
 }
+
+
+
+
+// rendere l'immagine scelta nel carosello attiva nella parte sinistra
+
+// 1. riferimento per attivare l'immagine
+let imgActive = 0; 
+
 
 
 
