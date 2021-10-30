@@ -128,3 +128,46 @@ document.querySelector('.thumb.active').classList.remove('active');
 /* imposta successiva */
 document.getElementsByClassName('thumb')[imgActive].classList.add('active');
 });
+
+
+
+
+
+
+const prev = document.querySelector('.prev');
+
+prev.addEventListener('click', function() {
+
+
+//aggiornamento immagine attiva
+/* imgActive++;
+console.log(imgActive); */
+
+//loop delle immagini (quando arriva all'ultima ritorna alla prima)
+
+
+
+if(imgActive === 0) {
+    imgActive = imageCollection.length -1;
+
+} else {
+    imgActive--;
+}
+
+
+
+
+//imposta immagine attiva resettando quella attuale e impostando quella successiva
+/* resettare immagine */
+document.querySelector('.image-container.active').classList.remove('active');
+/* imposta successiva */
+document.getElementsByClassName('image-container')[imgActive].classList.add('active');
+
+
+// impostare la thmbnail
+/* resettare thmb */
+document.querySelector('.thumb.active').classList.remove('active');
+/* imposta successiva */
+document.getElementsByClassName('thumb')[imgActive].classList.add('active');
+
+});
